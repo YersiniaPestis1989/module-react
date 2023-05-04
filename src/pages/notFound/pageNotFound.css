@@ -1,0 +1,25 @@
+.note-found__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.note-found__title{
+    margin: 0;
+    font-size: 60px;
+    color: brown;
+}
+
+.note-found__text{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.note-found__link{
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 16px;
+    color:antiquewhite
+}

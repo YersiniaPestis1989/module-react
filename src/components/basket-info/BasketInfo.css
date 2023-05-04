@@ -1,0 +1,34 @@
+.header__total{
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.header__basket,
+.header__basket-active{
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border:1px solid #ffffff;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.header__basket-active{
+    background-color: #D58C51;
+    border-color: transparent;
+}
+
+.header__basket img,
+.header__basket-active img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

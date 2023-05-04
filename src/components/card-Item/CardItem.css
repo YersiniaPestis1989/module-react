@@ -1,0 +1,147 @@
+
+
+.products__list .products__item{
+    position: relative;
+    color:#ffffff;
+    border:1px solid #d58c51;
+    display: grid;
+    align-content: space-between;
+    align-items: start;
+    row-gap: 24px;
+    padding:43px 21px 32px;    
+    max-width: 312px;
+    min-width: 270px;
+    grid-template-rows: 270px max-content 1fr max-content;
+    grid-template-areas: "image"
+                         "header"
+                         "desc"
+                         "info";
+    cursor: pointer;
+}
+
+.products__list .basket__counter-wrapper{
+    display: none;
+}
+
+.products__list .products__item:hover{
+    color:#d58c51;
+}
+
+
+
+.product__image{
+    grid-area: image;
+    text-align: center;
+}
+
+.product__title{
+    grid-area: header;
+    margin: 0;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.product__text{
+    grid-area: desc;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.product__features{
+    grid-area: info;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.product__price{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.product__weight{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.product__btn-add,
+.product__btn-remove{
+    grid-area: botton;
+    justify-self: end;
+    display: inline-block;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    line-height: 0;
+    cursor:pointer;
+    background-image: url('../../../public/images/ui/icon-add.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+    color:#ffffff;
+    font-size: 0;
+}
+
+
+
+
+.product__btn-add,
+.product__set-btn{
+    margin-left: auto;
+}
+
+
+
+.product__btn-add:hover,
+.product__btn-remove:hover,
+.product__link-basket:hover{
+    background-color: #D58C51;
+    border-color: #D58C51;;
+}
+
+
+.product__btn-remove{
+    transform: rotate(45deg);
+    margin-left: 10px;
+}
+
+.product__link-basket{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.product__link-basket img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+}
+
+
+@media (max-width: 1200px){
+
+    .products__list .products__item{
+        max-width: 100%;
+    }
+}

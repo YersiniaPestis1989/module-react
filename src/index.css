@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+html{
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  min-width: 350px;
+  background-color:#161516;
+  font-size: 1rem ;
+  line-height: 1.2;
+  color: #FFFFFF;
+  font-weight: normal;
+  scrollbar-width: thin;
+  
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  margin:0 auto;
+  padding:0 15px;
+  max-width: 1308px;
+  width: 100%;
+}
+
+.container-content{
+  margin:0 auto;
+  padding:0 15px;
+  max-width: 860px;
+}
+
+.btn-toback{
+  position: relative;
+    flex-shrink: 0;
+    margin-right: 63px;
+    display: inline-block;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #D58C51;
+    border-radius: 50%;
+    line-height: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn-toback img{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-secondary{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border-radius: none;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: #D58C51;
+  text-decoration: none;
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+}
+
+
+.primary-btn{
+  padding: 12px;
+  min-width: 200px;
+  border-radius: none;
+  outline: none;
+  display: inline-block;
+  border:none;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: #131313;
+  background-color: #D58C51;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  width: 4px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 4px;
+  background-color: black;
 }
